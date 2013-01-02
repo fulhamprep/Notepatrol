@@ -3,6 +3,7 @@ gem 'rails', '3.2.9'
 
 # for prod
 gem 'mysql2'
+gem 'unicorn', '1.1.5'
 
 #for dev
 gem "sqlite3"
