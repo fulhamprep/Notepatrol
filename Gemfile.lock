@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rweng/jquery-datatables-rails.git
+  revision: 2024c99b26f94a036629ac04bd158c70d2f4f11b
+  specs:
+    jquery-datatables-rails (1.11.1)
+      jquery-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,8 +35,14 @@ GEM
     activesupport (3.2.9)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts_as_commentable_with_threading (1.1.2)
+      activerecord (>= 3.0)
+      activesupport (~> 3.0)
+      awesome_nested_set (>= 2.0)
     addressable (2.3.2)
     arel (3.0.2)
+    awesome_nested_set (2.1.5)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.0.1)
     better_errors (0.3.2)
       coderay (>= 1.0.0)
@@ -107,6 +120,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    mysql2 (0.3.11)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
@@ -188,9 +202,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (>= 0.3.2)
+  acts_as_commentable_with_threading
+  better_errors (>= 0.2.0)
   binding_of_caller (>= 0.6.8)
-  bootstrap-sass (>= 2.2.2.0)
+  bootstrap-sass (>= 2.1.1.0)
   cancan (>= 1.6.8)
   capybara (>= 2.0.1)
   coffee-rails (~> 3.2.1)
@@ -201,8 +216,10 @@ DEPENDENCIES
   factory_girl_rails (>= 4.1.0)
   figaro (>= 0.5.0)
   hub (>= 1.10.2)
+  jquery-datatables-rails!
   jquery-rails
   launchy (>= 2.1.2)
+  mysql2
   quiet_assets (>= 1.0.1)
   rails (= 3.2.9)
   rolify (>= 3.2.0)

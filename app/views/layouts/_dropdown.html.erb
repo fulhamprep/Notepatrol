@@ -1,0 +1,22 @@
+<div style="float:right" class="form-inline">
+<form accept-charset="UTF-8" action="/forms/show" method="post" >
+
+
+       <select class="input-small" id="id" name="id">
+       <%= options_from_collection_for_select(Form.order("name ASC").all, :id, :name) %>
+       </select>
+
+      <button type="submit" class="btn">View Form</button>
+</form>
+</div>
+<div style="float:right" class="form-inline">
+<form accept-charset="UTF-8" action="/yeargroups/show" method="post">
+
+
+       <select class="input-small" id="id" name="id">
+       <%= options_from_collection_for_select(Yeargroup.order("name ASC").all, :id, :name) %>
+       </select>
+
+      <button type="submit" class="btn">View Year</button>&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+</div>

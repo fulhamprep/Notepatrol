@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= link_to @form.name, :controller => "forms", :action=>"show", :id=>@form.id %></h3>
+<i class="icon-user"> </i> <%= @form.user.email %> [<%= link_to raw("<i class='icon-wrench'> </i>"), edit_form_path(@form) %>]
+<hr/>
+
+<% if !(@notes.empty? || @notes.nil?) %>
+<table class="table table-striped table-bordered" id="sortable"><thead>
+<th>Date</th>
+<th>Child</th>
+<th>Category</th>
+<th>Details</th>
+<th>Added by</th>
+
+</thead>
+<tbody>
+<% @notes.each do |note| %>
+<tr>
+<td><%= note.created_at.strftime("%d.%m.%y") %></td>
+<td><%= link_to note.student.name, :controller=>"students", :action=> "show", :id=> note.student.id %></td>
+<td><%= link_to note.category.name , :controller=>"categories", :action=> "show", :id=> note.category.id  %></td>
+<td><%= link_to note do %><i class="icon-play-circle"></i><% end%> &nbsp;&nbsp; <%= note.details %></td>
+<td><%= link_to note.user.name, :controller =>"users", :action=>"show", :id => note.user.id %></td>
+</tr>
+<% end %>
+</tbody>
+<% end %>

@@ -1,3 +1,35 @@
-<h3>User</h3>
-<p>User: <%= @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+
+<h2><%= @user.name %></h2>
+<i class="icon-envelope"></i> <a href="mailto:<%= @user.email %>"><%= @user.email %></a>
+<br/><br/>
+
+
+
+<i class="icon-plus"></i> <%= link_to 'New Note', new_note_path %>
+<br/><br/>
+<hr/>
+<% if !(@notes.empty? || @notes.nil?) %>
+<table  class="table table-striped table-bordered" id="sortable_table">
+<thead>
+<th>Date</th>
+<th>Child</th>
+<th>Form</th>
+<th>Category</th>
+<th>Details</th>
+
+
+</thead>
+<tbody>
+<% @notes.each do |note| %>
+<tr>
+<td><%= note.created_at.strftime("%d.%m.%y") %></td>
+<td><%= link_to note.student.name, :controller=>"students", :action=> "show", :id=> note.student.id %></td>
+<td><%= link_to note.student.form.name, :controller=>"forms", :action=> "show", :id=> note.student.form.id %></td>
+<td><%= link_to note.category.name , :controller=>"categories", :action=> "show", :id=> note.category.id  %></td>
+<td><%= link_to note do %><i class="icon-play-circle"></i><% end%> &nbsp;&nbsp; <%= note.details %></td>
+</tr>
+<% end %>
+</tbody>
+<% end %>
+
+

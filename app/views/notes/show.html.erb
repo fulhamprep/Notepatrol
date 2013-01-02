@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Note for <%= link_to @note.student.name, :controller=>"students", :action=> "show", :id=> @note.student.id %></h3>
+
+<small><em>Added by <%= link_to @note.user.name, :controller =>"users", :action=>"show", :id => @note.user.id %> on <%= @note.created_at.strftime("%d.%m.%y") %>. Filed under <%= link_to @note.category.name , :controller=>"categories", :action=> "show", :id=> @note.category.id %>.  [<%= link_to 'Edit', edit_note_path(@note) %> ]</em></small></p>
+
+<p class="lead">
+  <%= @note.details %>
+</p>
+<h4>Follow up</h4>
+
+<% if (!@comments.empty? || @comments.nil?) %>
+
+    <% @comments.each do |c| %>
+
+        <blockquote>
+        <p><%= c.body %></p>
+        <small><cite><%= c.user.name %> on <%= c.created_at.strftime("%d.%m.%y")%></cite></small>
+        </blockquote>
+
+    <% end %>
+<% end %>
+
+<%= form_tag(new_note_comment_url) %>
+
+<%= hidden_field_tag(:note_id,  @note.id) %>
+<div class="field">
+<%= text_area_tag( :body, "Add comments and updates here", :rows => 3, :class => "field span4") %>
+</div>
+<div class="actions">
+<%= submit_tag("Add comment") %>
+</div>
+
+
+<%= link_to 'Back', notes_path %>

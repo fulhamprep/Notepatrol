@@ -1,0 +1,110 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B7DD31E9169103A20026CE78 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = ../app; sourceTree = "<group>"; };
+		B7DD31EA169103A20026CE78 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; name = config; path = ../config; sourceTree = "<group>"; };
+		B7DD31EB169103A20026CE78 /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.ru; path = ../config.ru; sourceTree = "<group>"; };
+		B7DD31EC169103A20026CE78 /* db */ = {isa = PBXFileReference; lastKnownFileType = folder; name = db; path = ../db; sourceTree = "<group>"; };
+		B7DD31ED169103A20026CE78 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = doc; path = ../doc; sourceTree = "<group>"; };
+		B7DD31EE169103A20026CE78 /* features */ = {isa = PBXFileReference; lastKnownFileType = folder; name = features; path = ../features; sourceTree = "<group>"; };
+		B7DD31EF169103A20026CE78 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		B7DD31F0169103A20026CE78 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile.lock; path = ../Gemfile.lock; sourceTree = "<group>"; };
+		B7DD31F1169103A20026CE78 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../lib; sourceTree = "<group>"; };
+		B7DD31F2169103A20026CE78 /* log */ = {isa = PBXFileReference; lastKnownFileType = folder; name = log; path = ../log; sourceTree = "<group>"; };
+		B7DD31F3169103A20026CE78 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; name = public; path = ../public; sourceTree = "<group>"; };
+		B7DD31F4169103A20026CE78 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Rakefile; path = ../Rakefile; sourceTree = "<group>"; };
+		B7DD31F5169103A20026CE78 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
+		B7DD31F6169103A20026CE78 /* README.textile */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.textile; path = ../README.textile; sourceTree = "<group>"; };
+		B7DD31F7169103A20026CE78 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; name = script; path = ../script; sourceTree = "<group>"; };
+		B7DD31F8169103A20026CE78 /* spec */ = {isa = PBXFileReference; lastKnownFileType = folder; name = spec; path = ../spec; sourceTree = "<group>"; };
+		B7DD31F9169103A20026CE78 /* tmp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tmp; path = ../tmp; sourceTree = "<group>"; };
+		B7DD31FA169103A20026CE78 /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = ../vendor; sourceTree = "<group>"; };
+		B7DD31FB16947DDA0026CE78 /* _key_commands.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = _key_commands.html.erb; path = ../app/views/layouts/_key_commands.html.erb; sourceTree = "<group>"; };
+		B7DD31FC1694AA3A0026CE78 /* add_users.rake */ = {isa = PBXFileReference; lastKnownFileType = text; name = add_users.rake; path = ../lib/tasks/add_users.rake; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B7DD31E0169103860026CE78 = {
+			isa = PBXGroup;
+			children = (
+				B7DD31FC1694AA3A0026CE78 /* add_users.rake */,
+				B7DD31FB16947DDA0026CE78 /* _key_commands.html.erb */,
+				B7DD31E9169103A20026CE78 /* app */,
+				B7DD31EA169103A20026CE78 /* config */,
+				B7DD31EB169103A20026CE78 /* config.ru */,
+				B7DD31EC169103A20026CE78 /* db */,
+				B7DD31ED169103A20026CE78 /* doc */,
+				B7DD31EE169103A20026CE78 /* features */,
+				B7DD31EF169103A20026CE78 /* Gemfile */,
+				B7DD31F0169103A20026CE78 /* Gemfile.lock */,
+				B7DD31F1169103A20026CE78 /* lib */,
+				B7DD31F2169103A20026CE78 /* log */,
+				B7DD31F3169103A20026CE78 /* public */,
+				B7DD31F4169103A20026CE78 /* Rakefile */,
+				B7DD31F5169103A20026CE78 /* README */,
+				B7DD31F6169103A20026CE78 /* README.textile */,
+				B7DD31F7169103A20026CE78 /* script */,
+				B7DD31F8169103A20026CE78 /* spec */,
+				B7DD31F9169103A20026CE78 /* tmp */,
+				B7DD31FA169103A20026CE78 /* vendor */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		B7DD31E2169103860026CE78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = B7DD31E5169103860026CE78 /* Build configuration list for PBXProject "notepatrol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7DD31E0169103860026CE78;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B7DD31E7169103860026CE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B7DD31E8169103860026CE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DD31E5169103860026CE78 /* Build configuration list for PBXProject "notepatrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DD31E7169103860026CE78 /* Debug */,
+				B7DD31E8169103860026CE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DD31E2169103860026CE78 /* Project object */;
+}
