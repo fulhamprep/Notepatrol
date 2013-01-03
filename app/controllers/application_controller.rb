@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   #mobile
-  #include Mobylette::RespondToMobileRequests
+  include Mobylette::RespondToMobileRequests
     
     
   rescue_from CanCan::AccessDenied do |exception|

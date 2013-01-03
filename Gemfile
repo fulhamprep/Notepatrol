@@ -39,5 +39,5 @@ gem 'acts_as_commentable_with_threading'
 
 #mobile
 
-#gem 'mobylette'
-#gem 'jquery_mobile_rails'
+gem 'mobylette'
+gem 'jquery_mobile_rails'
