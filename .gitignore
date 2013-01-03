@@ -81,4 +81,4 @@ pickle-email-*.html
 /engineyard_rsa.pub
 
 #ignore xcode stuff
-/*xcodeproj*
+/notepatrol.xcode*
