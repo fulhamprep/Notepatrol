@@ -75,3 +75,7 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore RSA stuff
+/engineyard_rsa
+/engineyard_rsa.pub
