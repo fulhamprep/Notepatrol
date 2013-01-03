@@ -29,12 +29,14 @@
 		B7DD31FC1694AA3A0026CE78 /* add_users.rake */ = {isa = PBXFileReference; lastKnownFileType = text; name = add_users.rake; path = ../lib/tasks/add_users.rake; sourceTree = "<group>"; };
 		B7DD31FD1695D1460026CE78 /* forms.js.coffee */ = {isa = PBXFileReference; lastKnownFileType = text; name = forms.js.coffee; path = ../app/assets/javascripts/forms.js.coffee; sourceTree = "<group>"; };
 		B7DD31FE1695D1CD0026CE78 /* cateogories.js.coffee */ = {isa = PBXFileReference; lastKnownFileType = text; name = cateogories.js.coffee; path = ../app/assets/javascripts/cateogories.js.coffee; sourceTree = "<group>"; };
+		B7DD31FF16961B290026CE78 /* devise_layout.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = devise_layout.html.erb; path = ../app/views/layouts/devise_layout.html.erb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		B7DD31E0169103860026CE78 = {
 			isa = PBXGroup;
 			children = (
+				B7DD31FF16961B290026CE78 /* devise_layout.html.erb */,
 				B7DD31FE1695D1CD0026CE78 /* cateogories.js.coffee */,
 				B7DD31FD1695D1460026CE78 /* forms.js.coffee */,
 				B7DD31FC1694AA3A0026CE78 /* add_users.rake */,
