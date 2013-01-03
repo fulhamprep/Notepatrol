@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @student.name %></h1>
 
-<h3><%= @student.name %></h3>
-
-<small>[<%= @student.schoolreference %> | <%= link_to @student.form.name, :controller=>"forms", :action=> "show", :id=> @student.id %> | <%= link_to @student.form.user.name, :controller=>"users", :action=> "show", :id=> @student.form.user.id %> ]</small>
+<i class="icon-list"></i> &nbsp;<%= link_to @student.form.name, :controller=>"forms", :action=> "show", :id=> @student.id %> &nbsp; &nbsp; <i class="icon-user"></i>  &nbsp; <%= link_to @student.form.user.name, :controller=>"users", :action=> "show", :id=> @student.form.user.id %> 
 <hr>
 
 <% if !(@notes.empty? || @notes.nil?) %>

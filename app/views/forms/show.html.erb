@@ -1,7 +1,6 @@
-<p id="notice"><%= notice %></p>
 
-<h3><%= link_to @form.name, :controller => "forms", :action=>"show", :id=>@form.id %></h3>
-<i class="icon-user"> </i> <%= @form.user.email %> [<%= link_to raw("<i class='icon-wrench'> </i>"), edit_form_path(@form) %>]
+<h1>Class:  <%= link_to @form.name, :controller => "forms", :action=>"show", :id=>@form.id %></h1>
+<i class="icon-user"> </i> Form teacher: <a href="mailto:<%= @form.user.email%>"><%= @form.user.name %></a> [<%= link_to raw("<i class='icon-wrench'> </i>"), edit_form_path(@form) %>]
 <hr/>
 
 <% if !(@notes.empty? || @notes.nil?) %>

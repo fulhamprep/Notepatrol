@@ -1,4 +1,9 @@
-<h3>Add single</h3>
+
+<h3>Single Users</h3>
+<i>scroll down for bulk import option</i>
+<hr>
+
+
 <%= form_for(@student) do |f| %>
   <% if @student.errors.any? %>
     <div id="error_explanation">
@@ -28,9 +33,13 @@
     <%= f.submit %>
   </div>
 <% end %>
+<br><br>
+<hr>
 
-<h3>Add from .CSV</h3>
- <%= form_tag import_students_url, :multipart => true do %>
-    <%= file_field_tag "file" %>
-    <%= submit_tag "Upload and do your worst ..."%>
- <% end %>
+<h3>Bulk Add</h3>
+<i>CSV file should be [Student Code, Name, Form_id]</i>
+<hr>
+<%= form_tag import_students_url, :multipart => true do %>
+<%= file_field_tag "file" %>
+<%= submit_tag "Upload and do your worst ..."%>
+<% end %>

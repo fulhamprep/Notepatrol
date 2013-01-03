@@ -1,6 +1,8 @@
-<h3>Users</h3>
+<h1>Listing Users</h1>
+<i>Scroll down to add users</i>
+<hr>
 <div class="span8">
-<table class="table table-condensed">
+<table class="table table-striped table-bordered" id="sortable">
 <thead>
 <tr>
 <th>Username</th>
@@ -17,7 +19,6 @@
 <tr>
 <td><%= link_to user.name, user %></td>
 <td><%= user.email %></td>
-<!--<td><%= link_to :action=>"edit", :id=>user.id do %><i class="icon-wrench"></i><% end %></td>-->
 <td><%= user.created_at.to_date %></td>
 <td><%= user.roles.first.name.titleize unless user.roles.first.nil? %></td>
 <td>
@@ -29,11 +30,18 @@
 <% end %>
 </tbody>
 </table>
-</div>
 
-<h3>Bulk Add from .CSV</h3>
+
+</div>
+<div style="clear:both;">
+<br><br>
+<h3>Bulk Add</h3>
+<i>CSV file should be e.g </i>"Ming the Merciless", "ming@merciless.com"
+<br>
 <%= form_tag import_users_url, :multipart => true do %>
 <%= file_field_tag "file" %>
 <%= submit_tag "Upload and do your worst ..."%>
 <% end %>
+</div>
+
 

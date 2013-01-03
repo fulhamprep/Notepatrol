@@ -1,9 +1,6 @@
-<p id="notice"><%= notice %></p>
 
-<h3>Notes filed under "<%= @category.name %>"</h3>
-
-<i class="icon-plus"></i> <%= link_to 'New Note', new_note_path %>
-<br/><br/>
+<h1>Notes filed under "<%= @category.name %>"</h1>
+<br/>
 <hr/>
 <% if !(@notes.empty? || @notes.nil?) %>
 <table class="table table-striped table-bordered" id="sortable">

@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
 
-
-<h3><%= @yeargroup.name %></h3>
+<h1><%= @yeargroup.name %></h1>
 <i class="icon-user"> </i> HOY Holder [<%= link_to raw("<i class='icon-wrench'> </i>"), edit_yeargroup_path(@yeargroup) %>]
 
 <hr/>
@@ -21,7 +19,7 @@
 <% @notes.each do |note| %>
 <tr>
 <td><%= note.created_at.strftime("%d.%m.%y") %></td>
-<td><%= note.student.form.name %></td>
+<td><%= link_to note.student.form.name, :controller=>"forms", :action=> "show", :id=> note.student.form.id %></td>
 <td><%= link_to note.student.name, :controller => "students", :action => "show", :id => note.student.id %></td>
 <td><%= link_to note.category.name , :controller=>"categories", :action=> "show", :id=> note.category.id  %></td>
 <td><%= link_to note do %><i class="icon-play-circle"></i><% end%> &nbsp;&nbsp; <%= note.details %></td>
