@@ -79,3 +79,6 @@ pickle-email-*.html
 # Ignore RSA stuff
 /engineyard_rsa
 /engineyard_rsa.pub
+
+#ignore xcode stuff
+/*xcodeproj*
