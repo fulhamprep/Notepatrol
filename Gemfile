@@ -37,3 +37,7 @@ gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 
 gem 'acts_as_commentable_with_threading'
 
+#mobile
+
+#gem 'mobylette'
+#gem 'jquery_mobile_rails'

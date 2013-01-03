@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= content_for?(:title) ? yield(:title) : "Notepatrol" %> (mob)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "App_Name" %>">
+
+<%= javascript_include_tag "application" %>
+<%= javascript_include_tag "jquery.mobile.min" %>
+<%= stylesheet_link_tag    "jquery.mobile.min.css" %>
+<%= csrf_meta_tags %>
+<%= yield(:head) %>
+</head>
+<body>
+<div data-role="page">
+<%= yield %>
+</div>
+</body>
+</html>
