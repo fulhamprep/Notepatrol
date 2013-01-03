@@ -1,7 +1,7 @@
 <%= link_to "Notepatrol", root_path, :class => 'brand' %>
 
 <%= form_tag go_form_url, :class=>"navbar-form pull-left"%>
-<%= select_tag(:id, options_from_collection_for_select(Form.all, :id, :name), :class=>"span2") %>
+<%= select_tag(:id, options_from_collection_for_select(Form.order("name ASC").all, :id, :name), :class=>"span2") %>
 <button type="submit" class="btn">Choose a Form</button>
 </form>
 
