@@ -49,24 +49,15 @@ class NotesController < ApplicationController
   def create
     @note = Note.new(params[:note])
     @note.user_id = current_user.id
-    
-    if @note.save
-        redirect_to @note, notice: 'Note was successfully created.'
-    else
-        render action: "new"
+    respond_to do |format|
+      if @note.save
+          format.html { redirect_to @note, notice: 'Note was successfully created.' }
+        format.json { render json: @note, status: :created, location: @note }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @note.errors, status: :unprocessable_entity }
+      end
     end
-
-      
-      # Commented out to get the site working with mobylette.
-      # respond_to do |format|
-      #if @note.save
-      #  format.html { redirect_to @note, notice: 'Note was successfully created.' }
-      #  format.json { render json: @note, status: :created, location: @note }
-      #else
-      #  format.html { render action: "new" }
-      #  format.json { render json: @note.errors, status: :unprocessable_entity }
-      # end
-
   end
 
   # PUT /notes/1
