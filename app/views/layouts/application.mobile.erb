@@ -6,8 +6,9 @@
 <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "App_Name" %>">
 
 <%= javascript_include_tag "application" %>
-<%= javascript_include_tag "jquery.mobile.min" %>
-<%= stylesheet_link_tag    "jquery.mobile.min.css" %>
+<!-- Src: http://code.jquery.com/ -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 <%= csrf_meta_tags %>
 <%= yield(:head) %>
 </head>
