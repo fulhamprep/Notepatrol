@@ -1,17 +1,6 @@
-<div data-role="header">
-<h1>Latest Notes</h1>
-<%= link_to 'New Note', new_note_path %></div>
+
 <div data-role="content">
-<ul data-role="listview">
-<% @notes.each do |note| %>
-<li>
-<%= link_to note do %>
-<h2>[DB - <%= note.student.form.name%>] <%= note.student.name %></h2>
-[<%= truncate(note.details, :length => 25) %>
-<% end %>
-</li>
-<% end %>
-</ul>
+<%= render 'notes/notes' %>
 </div>
 
 

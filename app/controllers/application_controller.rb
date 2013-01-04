@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   #mobile
   include Mobylette::RespondToMobileRequests
-    
+
     
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_path, :alert => exception.message

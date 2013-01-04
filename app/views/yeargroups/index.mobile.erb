@@ -1,0 +1,16 @@
+
+<div data-role="content">
+<h1>Listing yeargroups</h1>
+<br>
+<hr/>
+
+<ul data-role="listview">
+<% @yeargroups.each do |yeargroup| %>
+<li>
+<%= link_to yeargroup.name, yeargroup%>
+<br>
+</li>
+<% end %>
+</ul>
+</div>
+

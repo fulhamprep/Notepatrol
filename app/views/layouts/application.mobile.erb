@@ -12,8 +12,12 @@
 <%= yield(:head) %>
 </head>
 <body>
+
 <div data-role="page">
+<%= render 'layouts/navigation' %>
+<div data-role="content">
 <%= yield %>
+</div>
 </div>
 </body>
 </html>

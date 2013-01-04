@@ -1,0 +1,13 @@
+<div data-role="content">
+<h1><%= @user.name %>'s Notes</h1>
+<i class="icon-envelope"></i> <a href="mailto:<%= @user.email %>"><%= @user.email %></a>
+<hr>
+
+
+
+
+<% if !(@notes.empty? || @notes.nil?) %>
+<%= render 'notes/notes' %>
+<% end %>
+</div>
+

@@ -1,0 +1,14 @@
+
+
+<div data-role="content">
+<h1>Class:  <%= link_to @form.name, :controller => "forms", :action=>"show", :id=>@form.id %></h1>
+Form teacher: <a href="mailto:<%= @form.user.email%>"><%= @form.user.name %></a>
+<hr/>
+
+
+
+
+<% if !(@notes.empty? || @notes.nil?) %>
+<%= render 'notes/notes' %>
+<% end %>
+</div>

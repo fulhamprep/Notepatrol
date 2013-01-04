@@ -1,0 +1,14 @@
+<div data-role="content">
+<h1>Listing forms</h1>
+<br>
+<hr/>
+
+<ul data-role="listview">
+<% @forms.each do |form| %>
+<li>
+<%= link_to form.name, form%>
+<br>
+</li>
+<% end %>
+</ul>
+</div>

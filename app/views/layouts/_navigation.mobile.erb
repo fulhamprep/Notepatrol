@@ -1,0 +1,19 @@
+<div data-role="navbar">
+<ul>
+<li><%= link_to "ADD NOTE" , new_note_path %></li>
+
+<li><%= link_to(current_user.name, edit_user_registration_path) %></li>
+</ul>
+</div><!-- /navbar -->
+
+
+<div data-role="header">
+<h1>NOTEPATROL</h1>
+</div>
+<div data-role="navbar">
+<ul>
+<li><%= link_to "All Notes", root_path %></li>
+<li><%= link_to "By Form", :controller=>"forms", :action=>"index"%></li>
+<li><%= link_to "By Year", :controller=>"yeargroups", :action=>"index"%></li>
+</ul>
+</div><!-- /navbar -->

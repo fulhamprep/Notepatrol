@@ -32,12 +32,32 @@
 		B7DD31FF16961B290026CE78 /* devise_layout.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = devise_layout.html.erb; path = ../app/views/layouts/devise_layout.html.erb; sourceTree = "<group>"; };
 		B7DD320416963CD80026CE78 /* application.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = application.mobile.erb; path = ../app/views/layouts/application.mobile.erb; sourceTree = "<group>"; };
 		B7DD320616963DAF0026CE78 /* index.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = index.mobile.erb; path = ../app/views/notes/index.mobile.erb; sourceTree = "<group>"; };
+		B7DD320716964AA50026CE78 /* new.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = new.mobile.erb; path = ../app/views/notes/new.mobile.erb; sourceTree = "<group>"; };
+		B7DD320816964ACA0026CE78 /* show.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = show.mobile.erb; path = ../app/views/notes/show.mobile.erb; sourceTree = "<group>"; };
+		B7DD320916964C4C0026CE78 /* _form.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = _form.mobile.erb; path = ../app/views/notes/_form.mobile.erb; sourceTree = "<group>"; };
+		B7DD320A16964DA00026CE78 /* _navigation.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = _navigation.mobile.erb; path = ../app/views/layouts/_navigation.mobile.erb; sourceTree = "<group>"; };
+		B7DD320B1696614C0026CE78 /* show.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = show.mobile.erb; path = ../app/views/users/show.mobile.erb; sourceTree = "<group>"; };
+		B7DD320C169661C70026CE78 /* _notes.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = _notes.mobile.erb; path = ../app/views/notes/_notes.mobile.erb; sourceTree = "<group>"; };
+		B7DD320D169662BD0026CE78 /* show.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = show.mobile.erb; path = ../app/views/yeargroups/show.mobile.erb; sourceTree = "<group>"; };
+		B7DD320E169663070026CE78 /* index.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = index.mobile.erb; path = ../app/views/yeargroups/index.mobile.erb; sourceTree = "<group>"; };
+		B7DD320F169664CE0026CE78 /* index.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = index.mobile.erb; path = ../app/views/forms/index.mobile.erb; sourceTree = "<group>"; };
+		B7DD3210169664DF0026CE78 /* show.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = show.mobile.erb; path = ../app/views/forms/show.mobile.erb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		B7DD31E0169103860026CE78 = {
 			isa = PBXGroup;
 			children = (
+				B7DD3210169664DF0026CE78 /* show.mobile.erb */,
+				B7DD320F169664CE0026CE78 /* index.mobile.erb */,
+				B7DD320E169663070026CE78 /* index.mobile.erb */,
+				B7DD320D169662BD0026CE78 /* show.mobile.erb */,
+				B7DD320C169661C70026CE78 /* _notes.mobile.erb */,
+				B7DD320B1696614C0026CE78 /* show.mobile.erb */,
+				B7DD320A16964DA00026CE78 /* _navigation.mobile.erb */,
+				B7DD320916964C4C0026CE78 /* _form.mobile.erb */,
+				B7DD320816964ACA0026CE78 /* show.mobile.erb */,
+				B7DD320716964AA50026CE78 /* new.mobile.erb */,
 				B7DD320616963DAF0026CE78 /* index.mobile.erb */,
 				B7DD320416963CD80026CE78 /* application.mobile.erb */,
 				B7DD31FF16961B290026CE78 /* devise_layout.html.erb */,

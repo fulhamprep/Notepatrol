@@ -1,4 +1,7 @@
-<h3>Note for <%= link_to @note.student.name, :controller=>"students", :action=> "show", :id=> @note.student.id %></h3>
+
+
+
+<h1>Note for <%= link_to @note.student.name, :controller=>"students", :action=> "show", :id=> @note.student.id %></h1>
 
 <small><em>Added by <%= link_to @note.user.name, :controller =>"users", :action=>"show", :id => @note.user.id %> on <%= @note.created_at.strftime("%d.%m.%y") %>. Filed under <%= link_to @note.category.name , :controller=>"categories", :action=> "show", :id=> @note.category.id %>.  [<%= link_to 'Edit', edit_note_path(@note) %> ]</em></small></p>
 <hr>

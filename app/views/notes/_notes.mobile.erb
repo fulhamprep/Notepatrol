@@ -1,0 +1,12 @@
+<ul data-role="listview">
+<% @notes.each do |note| %>
+<li>
+<%= link_to note do %>
+<h2>[DB] <%= note.student.name %></h2>
+<%= truncate(note.details, :length => 50) %>
+<br/>
+<small>On <%= note.created_at.strftime("%d.%m.%y") %></small>
+<% end %>
+</li>
+<% end %>
+</ul>
