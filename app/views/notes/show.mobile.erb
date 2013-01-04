@@ -1,9 +1,10 @@
+<div data-role="content">
 
+<h1>Note for <%= link_to @note.student.name, :controller=>"students", :action=> "show", :id=> @note.student.id %></h1>
 
-<p id="notice"><%= notice %></p>
 <p><small><em>Added by <%= link_to @note.user.name, :controller =>"users", :action=>"show", :id => @note.user.id %> on <%= @note.created_at.strftime("%d.%m.%y") %>. Filed under <%= link_to @note.category.name , :controller=>"categories", :action=> "show", :id=> @note.category.id %>.</em></small></p>
 
-<p class="lead"><%= @note.details %></blockquote></p>
+<p class="lead"><%= @note.details %>
 </p>
 
 <h4>Follow up</h4>
@@ -31,6 +32,9 @@
 
 
 </div>
+
+</div>
+
 
 
 

@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable, :timeoutable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :role_ids, :as => :admin
@@ -16,6 +16,11 @@ class User < ActiveRecord::Base
     has_many :notes
     has_one :form
     
+    
+    #timeout
+    def timeout_in
+        30.minutes
+    end
     
     #for bulk upload
     def self.csv_header

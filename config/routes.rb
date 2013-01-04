@@ -2,7 +2,7 @@ Notepatrol::Application.routes.draw do
   authenticated :user do
     root :to => 'notes#index'
   end
-  root :to => "notes#index"
+  root :to => redirect("/users/sign_in")
   devise_for :users
   resources :users
     resources :students

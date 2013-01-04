@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		B7440B201696AC730038DCF6 /* create.html.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = create.html.erb; path = ../app/views/devise/sessions/create.html.erb; sourceTree = "<group>"; };
+		B7440B221696AC900038DCF6 /* create.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = create.mobile.erb; path = ../app/views/devise/sessions/create.mobile.erb; sourceTree = "<group>"; };
+		B7440B231696FFE80038DCF6 /* new.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = new.mobile.erb; path = ../app/views/devise/sessions/new.mobile.erb; sourceTree = "<group>"; };
+		B7440B2416970E470038DCF6 /* devise_mobile_hack.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = devise_mobile_hack.rb; path = ../config/initializers/devise_mobile_hack.rb; sourceTree = "<group>"; };
+		B7440B2516971FCB0038DCF6 /* show.mobile.erb */ = {isa = PBXFileReference; lastKnownFileType = text; name = show.mobile.erb; path = ../app/views/categories/show.mobile.erb; sourceTree = "<group>"; };
 		B7DD31E9169103A20026CE78 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = ../app; sourceTree = "<group>"; };
 		B7DD31EA169103A20026CE78 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; name = config; path = ../config; sourceTree = "<group>"; };
 		B7DD31EB169103A20026CE78 /* config.ru */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.ru; path = ../config.ru; sourceTree = "<group>"; };
@@ -48,6 +53,11 @@
 		B7DD31E0169103860026CE78 = {
 			isa = PBXGroup;
 			children = (
+				B7440B2516971FCB0038DCF6 /* show.mobile.erb */,
+				B7440B2416970E470038DCF6 /* devise_mobile_hack.rb */,
+				B7440B231696FFE80038DCF6 /* new.mobile.erb */,
+				B7440B221696AC900038DCF6 /* create.mobile.erb */,
+				B7440B201696AC730038DCF6 /* create.html.erb */,
 				B7DD3210169664DF0026CE78 /* show.mobile.erb */,
 				B7DD320F169664CE0026CE78 /* index.mobile.erb */,
 				B7DD320E169663070026CE78 /* index.mobile.erb */,

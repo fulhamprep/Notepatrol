@@ -1,19 +1,17 @@
-<div data-role="navbar">
-<ul>
-<li><%= link_to "ADD NOTE" , new_note_path %></li>
 
-<li><%= link_to(current_user.name, edit_user_registration_path) %></li>
-</ul>
-</div><!-- /navbar -->
+<div data-role="header"  data-position="fixed">
 
-
-<div data-role="header">
 <h1>NOTEPATROL</h1>
-</div>
-<div data-role="navbar">
-<ul>
-<li><%= link_to "All Notes", root_path %></li>
-<li><%= link_to "By Form", :controller=>"forms", :action=>"index"%></li>
-<li><%= link_to "By Year", :controller=>"yeargroups", :action=>"index"%></li>
+<%= link_to( 'Log out', destroy_user_session_path, :method=>'delete', "data-icon"=>"delete", :class=>"ui-btn-right")%>
+
+<div data-role="navbar" data-iconpos="top">
+<ul >
+<li><%= link_to "Add Note" , new_note_path, "data-theme"=>"b" %></li>
+<li><%= link_to( 'All', destroy_user_session_path, :method=>'delete', "data-icon"=>"")%></li>
+<li><%= link_to "By Form", :controller=>"forms", :action=>"index" %></li>
+<li><%= link_to "By Year", :controller=>"yeargroups", :action=>"index", "data-theme"=>"b" %></li>
+
 </ul>
 </div><!-- /navbar -->
+
+</div>

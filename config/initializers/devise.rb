@@ -55,7 +55,7 @@ Devise.setup do |config|
   # config.http_authenticatable = false
 
   # If http headers should be returned for AJAX requests. True by default.
-  # config.http_authenticatable_on_xhr = true
+    config.http_authenticatable_on_xhr = false
 
   # The realm used in Http Basic Authentication. "Application" by default.
   # config.http_authentication_realm = "Application"
@@ -85,7 +85,7 @@ Devise.setup do |config|
   # config.pepper = "01e2820d6d0df0e6feb9b790c251314e6cef27ceccd1a8edf793bf25f719d21b8c01174cff5d462f280c9dc0772925d81656e7860d6d054c9079097774fc0383"
 
   # ==> Configuration for :confirmable
-  # A period that the user is allowed to access the website even without
+  # A  period that the user is allowed to access the website even without
   # confirming his account. For instance, if set to 2.days, the user will be
   # able to access the website for two days without confirming his account,
   # access will be blocked just in the third day. Default is 0.days, meaning
@@ -124,10 +124,10 @@ Devise.setup do |config|
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
-  # config.timeout_in = 30.minutes
+    config.timeout_in = 30.minutes
   
   # If true, expires auth token on session timeout.
-  # config.expire_auth_token_on_timeout = false
+  config.expire_auth_token_on_timeout = true
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
@@ -197,7 +197,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ["*/*", :html]
+    config.navigational_formats = ["*/*", :html, :mobile]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = Rails.env.test? ? :get : :delete

@@ -40,4 +40,7 @@ gem 'acts_as_commentable_with_threading'
 #mobile
 
 gem 'mobylette'
+
+#could not get this gem to play nicely with Devise.
+# need to come back to it
 gem 'jquery_mobile_rails'
