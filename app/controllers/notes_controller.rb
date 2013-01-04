@@ -66,7 +66,7 @@ class NotesController < ApplicationController
       #  format.html { render action: "new" }
       #  format.json { render json: @note.errors, status: :unprocessable_entity }
       # end
-
+    end
   end
 
   # PUT /notes/1
