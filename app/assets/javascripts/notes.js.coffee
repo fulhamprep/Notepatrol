@@ -3,4 +3,8 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
-    $('#sortable').dataTable()
+    $('#sortable').dataTable({
+         "bDestroy": true,  "aaSorting": [ ]
+    })
+jQuery ->
+    $('#sortable').css('width', '')    

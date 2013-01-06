@@ -10,6 +10,7 @@
 <th>Category</th>
 <th>Details</th>
 <th>Added by</th>
+<th>Delete?</th>
 
 </thead>
 <tbody>
@@ -21,6 +22,7 @@
 <td><%= link_to note.category.name , :controller=>"categories", :action=> "show", :id=> note.category.id %></td>
 <td><%= link_to note do %><i class="icon-play-circle"></i><% end%> &nbsp;&nbsp; <%= note.details %></td>
 <td><%= link_to note.user.name, :controller =>"users", :action=>"show", :id => note.user.id %></td>
+<td><%= button_to "x", note , :method=>:delete, :class=>:destroy, :confirm=>"Are you sure?", :class=>"btn btn-mini" %></td>
 </tr>
 <% end %>
 </tbody>
