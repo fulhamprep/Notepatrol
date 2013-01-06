@@ -76,6 +76,13 @@ class NotesController < ApplicationController
   # DELETE /notes/1.json
   def destroy
     @note = Note.find(params[:id])
+      
+    #get rid of associated comments
+    if !@note.comment_threads.nil?
+        @note.comment_threads.each do |c|
+            c.destroy
+        end
+    end
     @note.destroy
 
     respond_to do |format|
